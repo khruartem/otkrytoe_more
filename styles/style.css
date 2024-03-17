@@ -1,0 +1,164 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header__navigation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  display: block;
+  text-decoration: none;
+  margin-right: 64px;
+  max-height: 48px;
+}
+
+.logo-image {
+  width: 100%;
+}
+
+.menu {
+  margin-right: 204px;
+  align-self: center;
+}
+
+.menu__link-list {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+
+.links-list-item {
+  list-style-type: none;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #373130;
+  text-decoration: none;
+}
+
+.header__contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.tel-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-right: 56px;
+}
+
+.link_tel {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button {
+  appearance: none;
+  color: #fff;
+  background-color: #F4B629;
+  border-radius: 8px;
+  border: none;
+  font-family: Gotham Pro;
+  text-align: center;
+}
+
+.header__button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  padding: 15px 32px;
+}
+
+/* .section {
+  display: flex;
+}
+
+ .intro {
+  flex-direction: row;
+  gap: 32px;
+  justify-content: space-between;
+} */
+
+.intro {
+  display: grid;
+  grid-template-columns: 0.9831933fr 1fr;
+  gap: 32px;
+}
+
+.intro__content-container {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /* padding: 208px 93px 80px 248px; */
+}
+
+.main {
+  background-image: url(../images/waves.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  border-bottom-right-radius: 64px;
+  border-bottom-left-radius: 0;
+}
+
+.tagline {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+.tagline_accent-text {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(45deg, #2792A0 14.66%, #5CB9B7 85.34%);
+}
+
+.submit-container {
+  display: flex;
+}
+
+.submit-container_row {
+  flex-direction: row;
+}
+
+.intro__button {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  padding: 24px 39px;
+}
+
+.extra {
+  background-image: url(../images/boy_with_book.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 64px;
+}
