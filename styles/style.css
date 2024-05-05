@@ -7,19 +7,20 @@
 .header__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 204px;
 }
 
 .header__navigation-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  gap: 64px;
 }
 
 .header__logo {
   display: block;
   text-decoration: none;
-  margin-right: 64px;
   max-height: 48px;
 }
 
@@ -28,7 +29,6 @@
 }
 
 .menu {
-  margin-right: 204px;
   align-self: center;
 }
 
@@ -54,7 +54,7 @@
 .header__contact-container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  gap: 56px;
 }
 
 .tel-container {
@@ -62,7 +62,6 @@
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  margin-right: 56px;
 }
 
 .link_tel {
@@ -100,8 +99,9 @@
 
 .intro {
   display: grid;
-  grid-template-columns: 0.9831933fr 1fr;
-  gap: 32px;
+  grid-template-columns: 48.75% 1fr;
+  grid-template-rows: 567px 143px;
+  column-gap: 32px;
 }
 
 .intro__content-container {
@@ -110,7 +110,7 @@
   /* padding: 208px 93px 80px 248px; */
 }
 
-.main {
+.intro__content-container_main {
   background-image: url(../images/waves.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,6 +121,16 @@
   gap: 64px;
   border-bottom-right-radius: 64px;
   border-bottom-left-radius: 0;
+}
+
+.intro__content-container_extra {
+  background-image: url(../images/boy_with_book.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 64px;
+  grid-row-end: span 2;
 }
 
 .tagline {
@@ -152,13 +162,4 @@
   line-height: 26px;
   letter-spacing: 0.02em;
   padding: 24px 39px;
-}
-
-.extra {
-  background-image: url(../images/boy_with_book.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 64px;
 }
