@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   gap: 204px;
+  max-block-size: 48px;
 }
 
 .header__navigation-container {
@@ -21,11 +22,11 @@
 .header__logo {
   display: block;
   text-decoration: none;
-  max-height: 48px;
 }
 
 .logo-image {
   width: 100%;
+  max-block-size: 48px;
 }
 
 .menu {
@@ -73,7 +74,6 @@
   appearance: none;
   color: #fff;
   background-color: #F4B629;
-  border-radius: 16px;
   border: none;
   font-family: Gotham Pro;
   text-align: center;
@@ -83,6 +83,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  border-radius: 8px;
   letter-spacing: 0.02em;
   padding: 15px 32px;
 }
@@ -152,7 +153,7 @@
   display: block;
 }
 
-.tagline_accent-text {
+.decorated {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -173,6 +174,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  border-radius: 16px;
   letter-spacing: 0.02em;
   padding: 24px 39px;
 }
