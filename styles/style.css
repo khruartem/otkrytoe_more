@@ -97,6 +97,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  gap: 6.67vw;
 }
 
 .intro {
@@ -191,6 +192,9 @@
 
 .section {
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .portal {
@@ -201,4 +205,49 @@
 .infinity {
   inline-size: 34.8vw;
   block-size: 16.05vw;
+}
+
+.section__heading {
+  font-size: clamp(1.4375rem, 1.2829rem + 0.5976vw, 2rem);
+  text-align: center;
+  font-weight: 700;
+  line-height: 41.6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__card-list {
+  display: grid;
+  column-gap: 16px;
+}
+
+.section__card-list_advantages {
+  grid-template-columns: repeat(3, 464px);
+}
+
+.section__card-list-item {
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #f9f9f9;
+}
+
+.section__card {
+  display: flex;
+}
+
+.section__card_advantages {
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.img-advantages {
+  aspect-ratio: 1 / 1;
+  inline-size: 25%;
+}
+
+.card__title {
+  font-size: 20px;
+  color: #373130;
+  font-weight: 400;
 }
