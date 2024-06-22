@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 204px;
+  gap: 203px;
   max-block-size: 48px;
 }
 
@@ -46,7 +46,7 @@
 .menu__link-list {
   display: flex;
   flex-direction: row;
-  gap: 56px;
+  gap: 55px;
 }
 
 .links-list-item {
@@ -62,7 +62,7 @@
 .header__contact-container {
   display: flex;
   flex-direction: row;
-  gap: 56px;
+  gap: 60px;
 }
 
 .tel-container {
@@ -107,12 +107,12 @@
   column-gap: 32px;
 }
 
-.intro__content-container {
+.intro__content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.intro__content-container_main {
+.intro__content_main {
   background-image: url(../images/waves.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -120,17 +120,17 @@
   background-color: #F9F9F9;
   display: flex;
   flex-direction: column;
-  gap: 24.8%;
+  gap: 24%;
   border-bottom-right-radius: 64px;
   border-bottom-left-radius: 0;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-inline-start: 26.5%;
-  padding-block-end: 9.9%;
-  padding-block-start: 208px;
+  padding-inline-start: 26.6%;
+  padding-block-end: 10%;
+  padding-block-start: 22.09%;
 }
 
-.intro__content-container_extra {
+.intro__content_extra {
   background-image: url(../images/boy_with_book.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@
   grid-row-end: span 2;
 }
 
-.tagline {
+.intro__tagline {
   font-size: clamp(1.4375rem, 1.2141rem + 0.8632vw, 2.25rem);
   font-weight: 700;
   line-height: 47px;
@@ -149,7 +149,7 @@
   inline-size: 86.5%;
 }
 
-.tagline > span:first-child {
+.intro__tagline>span:first-child {
   display: block;
 }
 
@@ -170,24 +170,27 @@
   inline-size: 86.5%;
 }
 
-.intro__button {
+.button_intro {
   font-size: 20px;
   font-weight: 700;
   border-radius: 16px;
   padding: 24px 39px;
 }
 
-.extra-info-container {
+.extra-info {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.extra-info-text {
+.extra-info__text {
   font-size: 18px;
+  margin-inline-start: 11px;
+}
+
+.additional {
   opacity: 0.7;
   color: #373130;
-  margin-inline-start: 11px;
 }
 
 .section {
@@ -250,4 +253,5 @@
   font-size: 20px;
   color: #373130;
   font-weight: 400;
+  line-height: 26px;
 }
